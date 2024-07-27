@@ -65,3 +65,5 @@ This is a simple sentiment analysis web application built using Flask, Hugging F
 - Enter a sentence in the text area provided.
 - Click the "Analyze" button.
 - The app will display whether the sentiment of the entered sentence is positive or negative.
+
+![Demo](img/demo.png)
