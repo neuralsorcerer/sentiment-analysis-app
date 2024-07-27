@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sentiment Analysis</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen">
+    <div class="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+      <h1 class="text-2xl font-bold text-center mb-6">Sentiment Analysis</h1>
+      <form method="post">
+        <textarea
+          name="text"
+          rows="4"
+          cols="50"
+          placeholder="Enter a sentence"
+          class="w-full p-3 border border-gray-300 rounded mb-4"
+        ></textarea>
+        <button type="submit" class="w-full bg-blue-500 text-white p-3 rounded">
+          Analyze
+        </button>
+      </form>
+      {% if sentiment %}
+      <div class="mt-4 p-3 border-t border-gray-300">
+        <h2 class="text-xl font-semibold">
+          Sentiment: <span class="font-normal">{{ sentiment }}</span>
+        </h2>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
