@@ -20,7 +20,7 @@ This is a simple sentiment analysis web application built using Flask, Hugging F
 1. **Clone the repository**
 
    ```sh
-   git clone https://github.com/papaaannn/sentiment-analysis-app.git
+   git clone https://github.com/neuralsorcerer/sentiment-analysis-app.git
    cd sentiment-analysis-app
    ```
 
